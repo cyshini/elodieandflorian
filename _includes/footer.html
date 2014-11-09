@@ -1,13 +1,16 @@
-<footer id="footer" role="contentinfo" class="grid pam">
+<footer id="footer" role="contentinfo" class="grid pal">
   <div class="grid2">
-    <div class="mtm">
+    <div class="mbm">
       <ul class="contact-list">
-        <li>{{ site.title }}</li>
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <h4 class="mbs">Des questions ?</h4>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       </ul>
     </div>
-    <div class="mtm">
+    <div class="mbm">
       <p>{{ site.description }}</p>
     </div>
   </div>
 </footer>
+
+<script type="text/javascript" src="{{ "/js/jquery-1.11.1.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>

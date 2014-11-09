@@ -33,3 +33,62 @@
 /* You can also link them with a Sass @import */
 /* @import "my-styles"; */
 
+/* Big Steps */
+body { padding-top: 100px; }
+
+header {
+  background: $base-background;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+footer { background: $secondary-background; }
+
+#step1 {
+  background: $primary-background;
+  min-height: 600px;
+}
+#step2 {
+  background: $base-background;
+  margin: 0 auto;
+}
+#step3 {
+  background: $primary-background;
+  min-height: 600px;
+}
+#step4 {
+  background: $base-background;
+  margin: 0 auto;
+}
+#step5 { background: $primary-background; }
+
+
+/* Elements */
+.home {
+  margin-top: $ultra-large-value;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: $small-value $medium-value;
+  background: $button-active;
+  color: $darkcontext-color;
+  &:hover, &:focus, &:active {
+    background: $button-hover;
+    color: $darkcontext-color;
+  }
+}
+
+.map {
+  background: $primary-background;
+  min-height: 400px;
+}
+
+
+/* Media queries */
+@media (max-width: $small-screen) {
+  body { padding-top: 0; }
+  header { display: none; }
+}
