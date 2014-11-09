@@ -2,22 +2,9 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div id="main" role="main" class="grid pam">
+  <div class="grid2">
+    <div class="mtm">Yoo ch'ai lu dans les DNA que le Racing a encore perdu contre Oberschaeffolsheim.</div>
+    <div class="mtm">Verdammi et moi ch'avais donc parié deux knacks et une flammekueche. Ah so ? inquiète, ch'ai ramené du schpeck</div>
+  </div>
 </div>

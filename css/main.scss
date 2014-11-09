@@ -4,46 +4,32 @@
 @charset "utf-8";
 
 
+// Sass config file
+// (you should comment this line and move config file from vendor/knacss folder to your own folder)
+@import "_00-config";
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// Sass base styles
+@import "_01-base";
 
-$spacing-unit:     30px;
+// Sass files : chose the ones you need
+@import "_02-helpers"; // width and spacers visually classes
+@import "_03-grids"; // grids and autogrids
+@import "_04-tables";
+@import "_05-forms";
+@import "_06-icons"; // UTF-8 icons
+@import "_07-flexbox";
+@import "_08-rwd"; // Responsive Web Design helpers
+@import "_09-print";
+@import "_10-booleans"; // skip links and hyphens
+@import "_11-gmaps"; // Google maps bugs fix
+@import "_12-ie"; // IE6, IE7, IE8 support
+@import "_13-styling"; // minor stylings
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+/* ----------------------------- */
+/* ==own stylesheet              */
+/* ----------------------------- */
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+/* Here should go your own CSS styles */
+/* You can also link them with a Sass @import */
+/* @import "my-styles"; */
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
