@@ -84,6 +84,7 @@ a {
 	&:hover, &:focus, &:active {
 		color: $base-color-link-hover;
 	}
+	text-decoration: none;
 }
 
 /* font-sizing for content */

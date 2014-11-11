@@ -97,7 +97,7 @@ $(document).ready(function () {
             "elementType": "labels",
             "stylers": [
                 {
-                    "visibility": "on"
+                    "visibility": "off"
                 },
                 {
                     "lightness": 33
@@ -120,8 +120,16 @@ $(document).ready(function () {
     center: new google.maps.LatLng(21.694025, -71.79792800000001),
     zoom: 5,
     disableDefaultUI: true,
+    scrollwheel: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
-  var map = new google.maps.Map(mapCanvas, mapOptions)
+
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+
+  var marker = new google.maps.Marker({
+    map:map,
+    position: new google.maps.LatLng(21.694025, -71.79792800000001),
+    icon : '../img/pointer.png'
+  });
 
 })

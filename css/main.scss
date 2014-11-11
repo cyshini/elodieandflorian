@@ -89,7 +89,6 @@ footer { background: $base-background; }
 
 .btn {
   display: inline-block;
-  text-decoration: none;
   padding: $small-value $medium-value;
   background: $button-active;
   color: $darkcontext-color;
@@ -104,14 +103,27 @@ footer { background: $base-background; }
 }
 
 .map {
-  background: $primary-background;
-  min-height: 400px;
+  min-height: 600px;
   z-index: 0;
+}
+
+.invitation {
+  text-align: center;
+  background: $primary-background;
+  padding: 40px;
 }
 
 
 /* Media queries */
+@media (max-width: $medium-screen) {
+  .grid2-1 > *:first-child,
+  .grid2-1 > * + * { width:50%; }
+}
+
 @media (max-width: $small-screen) {
   body { padding-top: 0; }
   header { display: none; }
+  .map { display: none; }
+  .grid2-1 > *:first-child,
+  .grid2-1 > * + * { width:100%; }
 }
