@@ -41,32 +41,50 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
-footer { background: $secondary-background; }
+footer { background: $base-background; }
 
 #step1 {
-  background: $primary-background;
-  min-height: 600px;
+  background: url(../img/bg_step01.jpg) center 100% no-repeat fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+  background-size: cover;
+  min-height: 700px;
 }
 #step2 {
-  background: $base-background;
-  margin: 0 auto;
+  background: $secondary-background;
+  .grid2 {
+    margin: 0 auto;
+  }
 }
 #step3 {
   background: $primary-background;
   min-height: 600px;
 }
 #step4 {
-  background: $base-background;
-  margin: 0 auto;
+  background: $primary-background;
+  .grid2 {
+    margin: 0 auto;
+  }
 }
-#step5 { background: $primary-background; }
+#step5 { background: $secondary-background; }
 
 
 /* Elements */
 .home {
   margin-top: $ultra-large-value;
+}
+
+.subtitle {
+  color: #fff;
+  font-family: "Parisienne", Helvetica, Arial, sans-serif;
+  font-size: 4.2rem;
+  margin: 0;
+  line-height: 1;
 }
 
 .btn {
@@ -79,11 +97,16 @@ footer { background: $secondary-background; }
     background: $button-hover;
     color: $darkcontext-color;
   }
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: $h6-size;
+  margin-top: $h6-size;
 }
 
 .map {
   background: $primary-background;
   min-height: 400px;
+  z-index: 0;
 }
 
 
