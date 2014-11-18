@@ -23,6 +23,7 @@ $primary-color				: #000; // text color on primary elements
 $secondary-color			: #000; // text color on secondary elements
 $darkcontext-color		: #fff;  // text color on dark backgrounds
 $headings-color				: #52C4CC; // text color on headings
+$small-headings-color	: #404041; // text color on headings
 $base-color-link			: #52C4CC; // base links color
 $base-color-link-hover		: #C1D27C; // base hovered/focused links color
 
@@ -110,4 +111,10 @@ $gutter		: 20px; // gutter value for grid layouts. Unit can be: %, px, em, rem
     -ms-text-shadow: $horizOffset $vertOffset $blur $color; /* IE 10+ */
     -o-text-shadow: $horizOffset $vertOffset $blur $color;
     text-shadow: $horizOffset $vertOffset $blur $color;
+}
+
+// Box shadow mixin
+@mixin box-shadow($horizOffset, $vertOffset, $blur, $color) {
+    -webkit-box-shadow: $horizOffset $vertOffset $blur $color;
+    box-shadow: $horizOffset $vertOffset $blur $color;
 }

@@ -61,17 +61,17 @@ footer { background: $base-background; }
     margin: 0 auto;
   }
 }
-#step3 {
-  background: $primary-background;
-  min-height: 600px;
-}
+#step3 { background: url(../img/stamps.png) 98% 20px no-repeat $primary-background; }
+
 #step4 {
   background: $primary-background;
   .grid2 {
     margin: 0 auto;
   }
 }
-#step5 { background: $secondary-background; }
+#step5 {
+  background: $secondary-background;
+}
 
 
 /* Elements */
@@ -79,11 +79,32 @@ footer { background: $base-background; }
   margin-top: $ultra-large-value;
 }
 
-.subtitle {
+.logo {
+  font-family: "Contrail One", Helvetica, Arial, sans-serif;
+  font-size: $h3-size;
+  color: #F48DA0;
+}
+
+.h2emphase {
+  font-family: "Contrail One", Helvetica, Arial, sans-serif;
+  font-size: 54px;
+  color: #F48DA0;
+}
+
+.h1subtitle {
   color: #fff;
   font-family: "Parisienne", Helvetica, Arial, sans-serif;
   font-size: 4.2rem;
   margin: 0;
+  line-height: 1;
+}
+
+.h2subtitle {
+  color: $base-color;
+  font-family: "Parisienne", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  margin: 0;
+  text-transform: none;
   line-height: 1;
 }
 
@@ -103,7 +124,7 @@ footer { background: $base-background; }
 }
 
 .map {
-  min-height: 600px;
+  min-height: 720px;
   z-index: 0;
 }
 
@@ -115,6 +136,17 @@ footer { background: $base-background; }
 
 .photo {
   border: 6px solid #fff;
+  @include box-shadow(1px, 1px, 3px, #ddd);
+}
+
+.checklist {
+  max-width: 640px;
+  margin: 40px auto;
+  background: $primary-background;
+  border: 6px solid #fff;
+  li {
+    margin-bottom: $base-font-size;
+  }
 }
 
 footer ul {
@@ -125,6 +157,12 @@ footer ul {
 
 
 /* Media queries */
+@media (max-width: $large-screen) {
+  #step3 {
+    background: $primary-background;
+  }
+}
+
 @media (max-width: $medium-screen) {
   .grid2-1 > *:first-child,
   .grid2-1 > * + * { width:50%; }

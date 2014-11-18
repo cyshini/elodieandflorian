@@ -76,6 +76,7 @@ body {
 	background-color: $base-background;
 	color: $base-color;
 	font-family: $font-stack-common;
+	font-weight: 400;
 	line-height: $line-height;
 }
 
@@ -129,6 +130,7 @@ h3, .h3-like {
 	font-size: $h3-size;
 	font-family: $font-stack-headings;
 	font-weight: normal;
+	color: $small-headings-color;
 }
 
 h4, .h4-like {
