@@ -112,6 +112,7 @@ footer { background: $base-background; }
   display: inline-block;
   padding: $small-value $medium-value;
   background: $button-active;
+  border: 2px solid #fff;
   color: $darkcontext-color;
   &:hover, &:focus, &:active {
     background: $button-hover;
@@ -119,7 +120,7 @@ footer { background: $base-background; }
   }
   text-transform: uppercase;
   font-weight: 700;
-  font-size: $h6-size;
+  font-size: $h5-size;
   margin-top: $h6-size;
 }
 

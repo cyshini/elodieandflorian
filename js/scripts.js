@@ -132,4 +132,29 @@ $(document).ready(function () {
     icon : '../img/pointer.png'
   });
 
+  var floride = new google.maps.Marker({
+    map:map,
+    position: new google.maps.LatLng(27.6648274, -81.5157535)
+  });
+
+  var costarica = new google.maps.Marker({
+    map:map,
+    position: new google.maps.LatLng(10.1688133, -83.6359258)
+  });
+
+  var venezuela = new google.maps.Marker({
+    map:map,
+    position: new google.maps.LatLng(10.0390220, -69.4855352)
+  });
+
+  var cuba = new google.maps.Marker({
+    map:map,
+    position: new google.maps.LatLng(21.7644562, -78.5822148)
+  });
+
+  var haiti = new google.maps.Marker({
+    map:map,
+    position: new google.maps.LatLng(18.8801525, -72.2540898)
+  });
+
 })

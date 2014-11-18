@@ -2,9 +2,7 @@
 title: Elodie and Florian
 email: florian.urbaniak@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Elodie & Florian are getting maried !
-  Join us in Turks & Caicos
-  July 30th 2015
+  Elodie & Florian are getting maried ! Join us in Turks & Caicos, july 30th 2015
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://elodieandflorian.com" # the base hostname & protocol for your site
 twitter_username: dw19ht
