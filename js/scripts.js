@@ -61,7 +61,7 @@ $(document).ready(function () {
                     "visibility": "on"
                 },
                 {
-                    "color": "#E3EEEC"
+                    "color": "#d8edea"
                 }
             ]
         },
