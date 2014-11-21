@@ -57,15 +57,12 @@ footer { background: $base-background; }
 }
 #step2 {
   background: $secondary-background;
-  .grid2 {
-    margin: 0 auto;
-  }
 }
 #step3 { background: url(../img/stamps.png) 98% 20px no-repeat $primary-background; }
 
 #step4 {
   background: $primary-background;
-  .grid2 {
+  .reservations {
     margin: 0 auto;
   }
 }
@@ -75,8 +72,30 @@ footer { background: $base-background; }
 
 
 /* Elements */
+header {
+  height: 100px;
+}
+
 .home {
   margin-top: $ultra-large-value;
+}
+
+h1 {
+  position: relative;
+  div {
+    @include lineartextgradient(#F48DA0, #B0DEDB);
+    position: absolute;
+    width: 100%;
+  }
+}
+h1:after {
+  @include text-shadow(1px, 1px, 6px, #436e81);
+  color: transparent;
+  content: 'TURKS AND CAICOS';
+}
+
+.h1subtitle {
+  @include text-shadow(1px, 1px, 6px, #436e81);
 }
 
 .logo {
@@ -108,11 +127,13 @@ footer { background: $base-background; }
   line-height: 1;
 }
 
+
 .btn {
   display: inline-block;
-  padding: $small-value $medium-value;
+  padding: 12px 24px 10px 24px;
   background: $button-active;
-  border: 2px solid #fff;
+  border-radius: 2px;
+  border: 1px solid #fff;
   color: $darkcontext-color;
   &:hover, &:focus, &:active {
     background: $button-hover;
@@ -172,6 +193,7 @@ footer ul {
 @media (max-width: $small-screen) {
   body { padding-top: 0; }
   header { display: none; }
+  .home { margin-top: $large-value; }
   .map { display: none; }
   .grid2-1 > *:first-child,
   .grid2-1 > * + * { width:100%; }

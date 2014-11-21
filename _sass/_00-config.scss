@@ -1,7 +1,7 @@
 // Config file : variables, mixins, ...
 
 // font sizes
-$base-font-size	: 16px; // if "14px" then 1em = 14px
+$base-font-size	: 18px; // if "14px" then 1em = 14px
 $line-height	: 1.5; // equiv line-height 1.5
 $h1-size		: 10.0rem; // equiv "32px"
 $h2-size		: 2.8rem; // equiv "28px"
@@ -53,7 +53,7 @@ $extra-large-screen		: 1600px; // screens between 1281px and 1600px
 $ultra-large-screen		: 1920px; // ultra large screens
 
 // misc (choose unit you prefer)
-$gutter		: 20px; // gutter value for grid layouts. Unit can be: %, px, em, rem
+$gutter		: 40px; // gutter value for grid layouts. Unit can be: %, px, em, rem
 
 // Sass mixins : don't touch or you'll be banned ;)
 // px to em/rem

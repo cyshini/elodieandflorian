@@ -129,32 +129,37 @@ $(document).ready(function () {
   var marker = new google.maps.Marker({
     map:map,
     position: new google.maps.LatLng(21.694025, -71.79792800000001),
-    icon : '../img/pointer.png'
+    icon : '../img/marker.png'
   });
 
-  var floride = new google.maps.Marker({
+  var florida = new google.maps.Marker({
     map:map,
-    position: new google.maps.LatLng(27.6648274, -81.5157535)
+    position: new google.maps.LatLng(27.6648274, -79.5157535),
+    icon : '../img/marker_florida.png'
   });
 
   var costarica = new google.maps.Marker({
     map:map,
-    position: new google.maps.LatLng(10.1688133, -83.6359258)
+    position: new google.maps.LatLng(10.1688133, -81.6359258),
+    icon : '../img/marker_costarica.png'
   });
 
   var venezuela = new google.maps.Marker({
     map:map,
-    position: new google.maps.LatLng(10.0390220, -69.4855352)
+    position: new google.maps.LatLng(10.0390220, -67.4855352),
+    icon : '../img/marker_venezuela.png'
   });
 
   var cuba = new google.maps.Marker({
     map:map,
-    position: new google.maps.LatLng(21.7644562, -78.5822148)
+    position: new google.maps.LatLng(21.7644562, -79.5822148),
+    icon : '../img/marker_cuba.png'
   });
 
   var haiti = new google.maps.Marker({
     map:map,
-    position: new google.maps.LatLng(18.8801525, -72.2540898)
+    position: new google.maps.LatLng(18.8801525, -71.2540898),
+    icon : '../img/marker_haiti.png'
   });
 
 })
