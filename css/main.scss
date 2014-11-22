@@ -67,7 +67,8 @@ footer { background: $base-background; }
   }
 }
 #step5 {
-  background: $secondary-background;
+  /*background: $secondary-background;*/
+  background: url(../img/bg_step05.jpg) center bottom no-repeat fixed $secondary-background;
 }
 
 
@@ -168,6 +169,14 @@ h1:after {
   border: 6px solid #fff;
   li {
     margin-bottom: $base-font-size;
+  }
+}
+
+.reservations a,
+.checklist a {
+  color: $base-color;
+  &:hover, &:focus, &:active {
+    color: $base-color-link;
   }
 }
 

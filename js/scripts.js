@@ -8,6 +8,13 @@ $(document).ready(function () {
     return false;    // Prevents the dreaded jump/flash
    });
 
+  /* Konami code */
+  $( window ).konami({
+    cheat: function() {
+      window.open('https://www.youtube.com/watch?v=GFLGRidfFo4');
+    } // end cheat
+  });
+
   /* Google Map */
   var mapCanvas = document.getElementById('map_canvas');
   var mapOptions = {
