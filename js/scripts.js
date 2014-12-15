@@ -11,7 +11,7 @@ $(document).ready(function () {
   /* Konami code */
   $( window ).konami({
     cheat: function() {
-      window.open('https://www.youtube.com/watch?v=GFLGRidfFo4');
+      window.location = "https://www.youtube.com/watch?v=GFLGRidfFo4";
     } // end cheat
   });
 
